@@ -1,19 +1,26 @@
 {
   "name": "webpack-template",
   "version": "1.0.0",
-  "description": "default webpack template",
+  "description": "My default webpack template",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "webpack-dev-server --open --mode development",
+    "build": "webpack --mode production"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/DeevMaks/webpack-template.git"
   },
   "author": "Deev Maks (DevMArt)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/DeevMaks/webpack-template/issues"
   },
-  "homepage": "https://github.com/DeevMaks/webpack-template#readme"
+  "homepage": "https://github.com/DeevMaks/webpack-template#readme",
+  "devDependencies": {
+    "path": "^0.12.7",
+    "webpack": "^4.40.1",
+    "webpack-cli": "^3.3.8",
+    "webpack-dev-server": "^3.8.0"
+  }
 }
